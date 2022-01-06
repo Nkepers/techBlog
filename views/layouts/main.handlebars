@@ -5,28 +5,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TechBlog</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
 </head>
 
 <body>
   <div class="wrapper">
     <header>
-      <h1>Tech Blog</h1>
-      <nav>
-        <a href="/">Home</a>
+      <h1 class="nav justify-content-center nav-pills bg-primary">Tech Blog</h1>
+      <nav class="bg-secondary p-2">
+        <a href="/" class="text-dark text-uppercase font-weight-bold">Home</a>
         {{#if loggedIn}}
-        <a href="/dashboard">dashboard</a>
-        <button id="logout" class="btn-no-style">logout</button>
+        <a href="/dashboard" class="text-dark text-uppercase font-weight-bold">dashboard</a>
+        <button id="logout" class="btn-no-style btn-outline-danger float-right">logout</button>
         {{else}}
         <a href="/login">login</a>
         {{/if}}
       </nav>
     </header>
-    <main>
+    <main class="bg-info p-3">
       {{{ body }}}
     </main>
-    <footer>
-      Thanks for visiting!
-    </footer>
   </div>
 
   {{#if loggedIn}}
