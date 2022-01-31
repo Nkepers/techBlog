@@ -9,23 +9,26 @@
 </head>
 
 <body>
-  <div class="wrapper">
-    <header>
-      <h1 class="nav justify-content-center nav-pills bg-primary">Tech Blog</h1>
-      <nav class="bg-secondary p-2">
-        <a href="/" class="text-dark text-uppercase font-weight-bold">Home</a>
+  <header>
+    <nav class="nav justify-content-center nav-pills bg-primary">
+      <div class="nav-item">
+        <a href="/" class="text-dark">Homepage</a>
         {{#if loggedIn}}
-        <a href="/dashboard" class="text-dark text-uppercase font-weight-bold">dashboard</a>
-        <button id="logout" class="btn-no-style btn-outline-danger float-right">logout</button>
+        <a href="/dashboard" class="text-dark">Dashboard</a>
+        <button id="logout" class="text-dark border-0 btn btn-link ">Logout</button>
         {{else}}
-        <a href="/login">login</a>
+        <a href="/login" class="text-dark">Login</a>
         {{/if}}
-      </nav>
-    </header>
-    <main class="bg-info p-3">
-      {{{ body }}}
-    </main>
-  </div>
+      </div>
+    </nav>
+    <div class="container-fluid bg-primary">
+      <h1 class="text-center">Tech Blog</h1>
+    </div>
+  </header>
+
+  <main class="bg-info p-3">
+    {{{ body }}}
+  </main>
 
   {{#if loggedIn}}
   <script src="/js/logout.js"></script>
