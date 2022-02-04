@@ -6,6 +6,7 @@ Tech Blog was created to give the user an opportunity to create and edit posts o
 ## Table of Contents (Optional)
 * [Installation](#installation)
 * [Usage](#usage)
+* [Contributing](#contributing)
 * [Questions](#questions)
 
 ## Installation
@@ -16,5 +17,8 @@ This is what it will look like on your device.
 
 ![Tech Blog](images/TechBlog.png)
 
+## Contributing
+Nicholas Kepers (with help from Jennifer Lucas).
+
 ## Questions
-Please checkout my [Github](https://github.com/Nkepers) for other projects.
+Please checkout my [Github](https://github.com/Nkepers) for other projects. Any inquiries email me at nick.kepers.coder@gmail.com!
